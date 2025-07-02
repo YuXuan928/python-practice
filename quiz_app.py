@@ -151,7 +151,7 @@ quiz_data = [
     "question": "你編寫了以下的程式碼：\n"
                 "a = 24\n"
                 "b = 7\n"
-                "ans = (a % b * 100) // 2.0 ** 3.0 - b\n"
+                "ans = ((a % b * 100) // 2.0 ** 3.0 - b)\n"
                 "print(ans)\n\n"
                 "執行程式碼的輸出值是？",
     "options": {
