@@ -4,7 +4,6 @@ import streamlit as st
 quiz_data = [
     {"question": "Python 是一種什麼類型的語言？", "options": {"A": "編譯型", "B": "解釋型", "C": "組合型"}, "answer": ["B"], "multi": False},
     {"question": "以下哪些是 Python 的資料結構？", "options": {"A": "列表", "B": "字典", "C": "集合", "D": "陣列"}, "answer": ["A", "B", "C"], "multi": True},
-    {"question": "Python 中的 True 和 False 關鍵字是布林值。", "options": {"Yes": "是", "No": "否"}, "answer": {"Yes": "是"}, "multi": "yesno"},
     {"question": "以下哪個是 Python 的套件管理工具？", "options": {"A": "npm", "B": "pip", "C": "maven"}, "answer": ["B"], "multi": False},
     {
         "question": "你編寫了以下的程式碼：\n"
