@@ -369,6 +369,7 @@ quiz_data = [
    }
 ]
 
+
 def main():
     st.title("Python 線上測驗系統")
     st.write("請完成以下題目，支援單選、多選、判斷題（是非題）")
@@ -412,10 +413,12 @@ def main():
 
             if q.get("multi") == "yesno":
                 # 比較 dict
+                # 注意：這裡的 user_answers 是一個字典，q["answer"] 也是一個字典
                 if user_answers == q["answer"]:
                     correct = True
             else:
                 # 單選、多選用集合比較
+                # 確保 user_answers 和 q["answer"] 都是可轉換為集合的類型
                 if set(user_answers) == set(q["answer"]):
                     correct = True
 
@@ -427,6 +430,7 @@ def main():
                 if q.get("multi") == "yesno":
                     wrong_list = []
                     for k, v in q["answer"].items():
+                        # 確保 user_answers.get(k) 存在且與正確答案不符
                         if user_answers.get(k) != v:
                             wrong_list.append(f"{k}: 正確答案是 {v}")
                     st.write("正確答案：")
@@ -437,13 +441,16 @@ def main():
                     st.write(f"正確答案是：{correct_str}")
 
             st.session_state.q_index += 1
-            st.experimental_rerun()
+            # 將 st.experimental_rerun() 替換為 st.rerun()
+            st.rerun()
     else:
         st.write(f"測驗完成！你的分數是 {st.session_state.score} / {len(quiz_data)}")
         if st.button("重新開始"):
             st.session_state.q_index = 0
             st.session_state.score = 0
-            st.experimental_rerun()
+            # 將 st.experimental_rerun() 替換為 st.rerun()
+            st.rerun()
 
 if __name__ == "__main__":
     main()
+
