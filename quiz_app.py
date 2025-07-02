@@ -7,6 +7,18 @@ Created on Wed Jul  2 14:16:12 2025
 
 import streamlit as st
 
+if "question_index" not in st.session_state:
+    st.session_state.question_index = 0
+
+def next_question():
+    st.session_state.question_index += 1
+    st.experimental_rerun()
+
+st.write(f"Current question index: {st.session_state.question_index}")
+
+if st.button("下一題"):
+    next_question()
+
 # 測驗題目資料結構
 quiz_data = [
     {
