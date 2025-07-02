@@ -1,26 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jul  2 14:16:12 2025
-
-@author: 職前
-"""
-
 import streamlit as st
 
-if "question_index" not in st.session_state:
-    st.session_state.question_index = 0
-
-def next_question():
-    st.session_state.question_index += 1
-    st.experimental_rerun()
-
-st.write(f"Current question index: {st.session_state.question_index}")
-
-if st.button("下一題"):
-    next_question()
-
-# 測驗題目資料結構
+# 假設 quiz_data 在此檔案的某處被定義，例如：
 quiz_data = [
+    {"question": "Python 是一種什麼類型的語言？", "options": {"A": "編譯型", "B": "解釋型", "C": "組合型"}, "answer": ["B"], "multi": False},
+    {"question": "以下哪些是 Python 的資料結構？", "options": {"A": "列表", "B": "字典", "C": "集合", "D": "陣列"}, "answer": ["A", "B", "C"], "multi": True},
+    {"question": "Python 中的 True 和 False 關鍵字是布林值。", "options": {"Yes": "是", "No": "否"}, "answer": {"Yes": "是"}, "multi": "yesno"},
+    {"question": "以下哪個是 Python 的套件管理工具？", "options": {"A": "npm", "B": "pip", "C": "maven"}, "answer": ["B"], "multi": False},
     {
         "question": "你編寫了以下的程式碼：\n"
                     "list_1 = [1, 2, 3]\n"
@@ -369,7 +354,6 @@ quiz_data = [
    }
 ]
 
-
 def main():
     st.title("Python 線上測驗系統")
     st.write("請完成以下題目，支援單選、多選、判斷題（是非題）")
@@ -414,7 +398,8 @@ def main():
                 yesno_answers[key] = choice
             user_answers = yesno_answers
 
-        if st.button("提交答案"):
+        # 為「提交答案」按鈕增加唯一的 key
+        if st.button("提交答案", key=f"submit_btn_{st.session_state.q_index}"):
             correct = False
             correct_answer_display = "" # 用於儲存正確答案的顯示內容
 
@@ -449,8 +434,8 @@ def main():
             st.error("❌ 答錯了！")
             st.write(st.session_state.last_correct_answer_display)
 
-        # 增加「下一題」按鈕
-        if st.button("下一題"):
+        # 為「下一題」按鈕增加唯一的 key
+        if st.button("下一題", key=f"next_btn_{st.session_state.q_index}"):
             st.session_state.q_index += 1
             st.session_state.show_feedback = False # 重置反饋狀態
             st.rerun() # 觸發重新運行以顯示下一題或完成訊息
@@ -458,7 +443,8 @@ def main():
     # 測驗完成
     else: # q_index >= len(quiz_data) 且 show_feedback 為 False (因為上一題已處理完畢)
         st.write(f"測驗完成！你的分數是 {st.session_state.score} / {len(quiz_data)}")
-        if st.button("重新開始"):
+        # 為「重新開始」按鈕增加唯一的 key
+        if st.button("重新開始", key="restart_btn"):
             st.session_state.q_index = 0
             st.session_state.score = 0
             st.session_state.show_feedback = False # 確保重置
@@ -469,4 +455,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
