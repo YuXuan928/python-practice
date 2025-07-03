@@ -1130,20 +1130,20 @@ quiz_data = [
         "multi": True
     },
    {
-        "question": " 公司決定要幫所有年薪不到 50 萬的員工調升基本工資 5%，並給予獎金 1 萬元。\n"
+        "question": "公司決定要幫所有年薪不到50萬的員工調升基本工資5%，並給予獎金1萬元。\n"
                     "新工資 = 目前工資 × 1.05 + 10000。\n"
-                    "程式會將每個人調整後的年薪資料存入 `salaryList` 清單中。\n"
-                    "請完成下列程式邏輯片段：\n\n"
+                    "程式會將每個人調整後的年薪資料存入 salaryList 清單中。\n"
+                    "請完成下列程式碼片段：\n\n"
                     "```python\n"
-                    "___(1)___\n"
-                    "    if salaryList[index] >= 500000:\n"
-                    "        ___(2)___\n"
-                    "    salaryList[index] = (salaryList[index] * 1.05) + 10000\n"
+                    "___(1)___            # for index in range(len(salary_list)):\n"
+                    "if salaryList[index] >= 500000:\n"
+                    "    ___(2)___        # continue\n"
+                    "salaryList[index] = (salaryList[index] * 1.05) + 10000\n"
                     "```",
         "options": {
             "A1": "for index in range(len(salary_list) + 1):",
-            "B1": "for index in range(len(salary list) - 1):",
-            "C1": "for index in range(len(salaryList)):",
+            "B1": "for index in range(len(salary_list) - 1):",
+            "C1": "for index in range(len(salary_list)):",
             "D1": "for index in salary_list:",
 
             "A2": "exit()",
@@ -1151,6 +1151,9 @@ quiz_data = [
             "C2": "break",
             "D2": "end"
         },
+        "answer": ["C1", "B2"],
+        "multi": False
+    },
         {
         "question": "你設計了一個函式 `times_tables()`，要列出從 2 到 9 的九九乘法表。\n"
                     "你需要選出正確的 `for` 迴圈條件來完成這段程式碼：\n\n"
