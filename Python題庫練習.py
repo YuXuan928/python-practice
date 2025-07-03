@@ -330,7 +330,7 @@ quiz_data = [
     "multi": False
 },
  {
-       "question": "12. 你設計了一個比較數字的 Python程式，内容如下：\n"
+       "question": "你設計了一個比較數字的 Python程式，内容如下：\n"
                    "01 n1 = eval(input(\"Please enter the first number:\"))\n"
                    "02 n2 = eval(input(\"Please enter the second number:\"))\n"
                    "03 if nl = n2:   \n"
@@ -492,7 +492,7 @@ quiz_data = [
     "multi": True
 },
 {
-        "question": "6. 你為學校設計了一個Python 應用程式，在classroom的清單中包含了60位同學的姓名，最後3名是班上的幹部。你需要分割清單內容顯示除了幹部以外的所有同學，你可以利用以下哪二個程式碼達成？",
+        "question": "你為學校設計了一個Python 應用程式，在classroom的清單中包含了60位同學的姓名，最後3名是班上的幹部。你需要分割清單內容顯示除了幹部以外的所有同學，你可以利用以下哪二個程式碼達成？",
         "options": {
             "A": "classroom[0:-2]",
             "B": "classroom[0:-3]",
@@ -504,7 +504,7 @@ quiz_data = [
         "multi": True
     },
 {
-        "question": "7. 你開發了一個 Python 應用程式，其中有一個名為month的清單儲存所有月份的英文。你要分割這個清單，取得由第二個月份開始，每間隔一個值的月份名稱，你應該使用哪個程式碼？\n\n#「::2」表示要「間隔2個項目」取值",
+        "question": "你開發了一個 Python 應用程式，其中有一個名為month的清單儲存所有月份的英文。你要分割這個清單，取得由第二個月份開始，每間隔一個值的月份名稱，你應該使用哪個程式碼？\n\n#「::2」表示要「間隔2個項目」取值",
         "options": {
             "A": "month[2:2]",
             "B": "month[::2]",
@@ -516,7 +516,7 @@ quiz_data = [
     },
 
     {
-        "question": "8. 你設計了一個函式來執行除法，因為除法的除數不能為零，所以在函式中必須要針對這個重點進行檢查。你要如何完成這段程式碼？請在回答區選擇適當的程式碼片段。\n\n"
+        "question": "你設計了一個函式來執行除法，因為除法的除數不能為零，所以在函式中必須要針對這個重點進行檢查。你要如何完成這段程式碼？請在回答區選擇適當的程式碼片段。\n\n"
                     "def safe_divide(numerator, denominator):  # numerator 分子； denominator分母\n"
                     "    ___(1)___\n"
                     "        print(\"A required value is missing.\")\n"
@@ -548,7 +548,7 @@ quiz_data = [
         "multi": True
     },
 {
-        "question": "9. 您建立了下列程式來找出學生並顯示姓名。加上行號僅為參考之用。\n"
+        "question": "您建立了下列程式來找出學生並顯示姓名。加上行號僅為參考之用。\n"
                     "01 students = {1: 'Jone', 2: 'Mary'}\n"
                     "02 student = input('Enter the student id: ')\n"
                     "03 if not student in students:   #需轉int；int(student)\n"
@@ -587,7 +587,7 @@ quiz_data = [
         "multi": True
     },
  {
-        "question": "1. 老師正在設計一個 Python 程式，學生可以使用它來記錄他們考試的平均分數。該程式必須允許使用者輸入他們的名字和當前分數。該程式將輸出使用者名和使用者的平均分數。輸出必須符合以下要求：\n"
+        "question": "老師正在設計一個 Python 程式，學生可以使用它來記錄他們考試的平均分數。該程式必須允許使用者輸入他們的名字和當前分數。該程式將輸出使用者名和使用者的平均分數。輸出必須符合以下要求：\n"
                     "- 使用者姓名必須是靠左對齊的。\n"
                     "- 如果使用者姓名少於20個字元，則必須在右側添加額外的空間。\n"
                     "- 平均分數在小數點左方是三位數，小數點右方是二位數。(XXX.XX)\n"
@@ -612,7 +612,7 @@ quiz_data = [
         "multi": True
     },
    {
-       "question": "2. 你正在設計一個函式以讀取資料檔案並將結果列印為格式化表格。資料檔案中包含有關蔬菜的資訊。每個記錄都包含蔬菜的名稱、重量和價格。\n"
+       "question": "你正在設計一個函式以讀取資料檔案並將結果列印為格式化表格。資料檔案中包含有關蔬菜的資訊。每個記錄都包含蔬菜的名稱、重量和價格。\n"
                    "你需要列印資料，使其看起來像下面的範例：\n"
                    "Potatos  5.4   2.33\n"
                    "Carrots  2.5   1.50\n"
@@ -639,7 +639,7 @@ quiz_data = [
        "multi": True
    },
    {
-       "question": "3. 你正在設計一個電子商務程式，它可以接受來自使用者輸入，並以逗號分隔的格式輸出資料。你可以編寫以下程式碼接受資料輸入：\n"
+       "question": "你正在設計一個電子商務程式，它可以接受來自使用者輸入，並以逗號分隔的格式輸出資料。你可以編寫以下程式碼接受資料輸入：\n"
                    "product = input(\"Enter product name: \")\n"
                    "qty = input(\"Input quantity: \")  # qty 是 string\n\n"
                    "輸出必須符合以下要求：\n"
@@ -658,7 +658,7 @@ quiz_data = [
        "multi": True
    },
    {
-        "question": "4. 請檢視下面的程式碼：\n"
+        "question": "請檢視下面的程式碼：\n"
                     "x = \"Tiger\"\n"
                     "y = \"Lion\"\n"
                     "z = \"Jaguar\"\n"
@@ -675,7 +675,7 @@ quiz_data = [
         "multi": False
     },
    {
-        "question": "5. 你為公司設計 Python 應用程式，需要接受來自使用者的輸入並將該資訊列印到螢幕上。你的程式碼如下：\n"
+        "question": "你為公司設計 Python 應用程式，需要接受來自使用者的輸入並將該資訊列印到螢幕上。你的程式碼如下：\n"
                     "01 print(\"Enter product name:\")\n"
                     "02 \n"
                     "03 print(product_name)\n"
@@ -690,7 +690,7 @@ quiz_data = [
         "multi": False
     },
    {
-        "question": "6. 有一個旅行社需要一個簡單的程式用來輸入合作飯店及民宿的調查資料。程式必須接受輸入並返回基於五顆星規模的平均評等。輸出必須四捨五入到小數第二位。你必須完成這個程式碼以符合需求。請在回答區選擇適當的程式碼片段。注意：每個正確的選擇都可獲得一分。\n\n"
+        "question": "有一個旅行社需要一個簡單的程式用來輸入合作飯店及民宿的調查資料。程式必須接受輸入並返回基於五顆星規模的平均評等。輸出必須四捨五入到小數第二位。你必須完成這個程式碼以符合需求。請在回答區選擇適當的程式碼片段。注意：每個正確的選擇都可獲得一分。\n\n"
                     "sum = count = done = 0\n"
                     "average = 0.0\n"
                     "while (done != -1):\n"
@@ -734,7 +734,7 @@ quiz_data = [
         "multi": True
     },
 {
-        "question": "7. 你必須開發一個簡單的Python 檔案程式來執行以下動作：\n"
+        "question": "你必須開發一個簡單的Python 檔案程式來執行以下動作：\n"
                     "檢查檔案是否存在。\n"
                     "・如果該檔案存在，就顯示檔案內容。\n"
                     "・如果該檔案不存在，就使用指定的名稱新增檔案。\n"
@@ -773,7 +773,7 @@ quiz_data = [
         "multi": True
     },
 {
-        "question": "8. 你正在設計一個檔案的函式。如果檔案不存在，則返回”檔案不存在”。如果該檔案存在，則該函式返回第一行的內容。請完成以下程式碼，將程式碼片段按正確順序排列：\n\n"
+        "question": "你正在設計一個檔案的函式。如果檔案不存在，則返回”檔案不存在”。如果該檔案存在，則該函式返回第一行的內容。請完成以下程式碼，將程式碼片段按正確順序排列：\n\n"
                     "import os\n"
                     "def get_file_message(file):\n"
                     "    ___(1)___\n"
@@ -798,7 +798,7 @@ quiz_data = [
         "multi": True
     },
 {
-        "question": "9. 你設計一個Python 應用程式，需要將資料讀寫到文字檔中。如果檔案不存在，則必須新增它。如果檔案已有內容，則將文字加到最後。你應該使用哪個程式碼？",
+        "question": "你設計一個Python 應用程式，需要將資料讀寫到文字檔中。如果檔案不存在，則必須新增它。如果檔案已有內容，則將文字加到最後。你應該使用哪個程式碼？",
         "options": {
             "A": "open(\"file_data\", \"a\")",
             "B": "open(\"file_data\", \"w\")",
@@ -809,7 +809,7 @@ quiz_data = [
         "multi": False
     },
  {
-        "question": "10. 你正在設計一個Python 程式來讀取學生資料的檔案，文件中包含了學生的班級、座號和姓名，下面顯示的是檔案中的資料範例：\n"
+        "question": "你正在設計一個Python 程式來讀取學生資料的檔案，文件中包含了學生的班級、座號和姓名，下面顯示的是檔案中的資料範例：\n"
                     "'1A',  1,  'David'\n"
                     "'1A',  2,  'Mary'\n\n"
                     "程式碼必須符合以下需求：\n"
@@ -840,7 +840,7 @@ quiz_data = [
     },
  
     {
-        "question": "11. 某間公司需要有人協助更新他們的檔案系統。您必須建立一個執行下列動作的簡易檔案操作程式：\n"
+        "question": "某間公司需要有人協助更新他們的檔案系統。您必須建立一個執行下列動作的簡易檔案操作程式：\n"
                     "1. 查看檔案是否存在。\n"
                     "2. 如果檔案存在，則顯示其內容。\n"
                     "請選取正確的程式碼片段以完成程式碼。\n\n"
@@ -876,7 +876,7 @@ quiz_data = [
         "multi": False
     },
     {
-       "question": "1. 你設計了一個程式要依學生的成績來顯示等級，它的規定如下：\n\n"
+       "question": "你設計了一個程式要依學生的成績來顯示等級，它的規定如下：\n\n"
                    "Percentage range\tLetter grade\n"
                    "90 through 100\t\t\tA\n"
                    "80 through 89\tB\n"
@@ -919,7 +919,1088 @@ quiz_data = [
        "answer": ["B1", "D2", "D3", "D4"],
        "multi": True
    },
-]
+    {
+       "question": "你要設計一款以使用者年齡進行電影分級的程式，必須符合以下要求：\n"
+                   "・任何 18 歲或以上的人會顯示「限制級」的訊息。\n"
+                   "・任何 13 歲或以上但小於 18 歲的人會顯示「輔導級」的訊息。\n"
+                   "・任何 12 歲或更年輕的人會顯示「普通級」的訊息。\n"
+                   "・如果年齡未知，則會顯示「未知」的訊息。\n\n"
+                   "請完成下列程式碼邏輯：\n\n"
+                   "def get_rating(age):\n"
+                   "    rating = \"\"\n"
+                   "    if ___(1)___\n"
+                   "        rating = \"未知\"\n"
+                   "    elif ___(2)___\n"
+                   "        rating = \"普通級\"\n"
+                   "    elif ___(3)___\n"
+                   "        rating = \"輔導級\"\n"
+                   "    else ___(4)___\n"
+                   "        rating = \"限制級\"\n"
+                   "    return rating",
+       "options": {
+           "A1": "age < 13",
+           "B1": "age < 18",
+           "C1": ":",
+           "D1": "age == None",
+
+           "A2": "age < 13",
+           "B2": "age < 18",
+           "C2": ":",
+           "D2": "age == None",
+
+           "A3": "age < 13",
+           "B3": "age < 18",
+           "C3": ":",
+           "D3": "age == None",
+
+           "A4": "age < 13",
+           "B4": "age < 18",
+           "C4": ":",
+           "D4": "age == None"
+       },
+       "answer": ["D1", "A2", "B3", "C4"],
+       "multi": True
+   },
+    {
+       "question": "你用學生的成績 (`grade`) 及排名 (`rank`) 編寫程式碼來決定最後成績：\n\n"
+                   "```python\n"
+                   "if grade > 80 and rank >= 3:\n"
+                   "    grade += 10\n"
+                   "if grade > 70 and rank > 3:\n"
+                   "    grade += 5\n"
+                   "else:\n"
+                   "    grade -= 5  # 符合 76-5=71\n"
+                   "```\n"
+                   "當 `grade = 76`，`rank = 3` 時，執行程式碼的輸出值是？",
+       "options": {
+           "A": "71",
+           "B": "76",
+           "C": "81",
+           "D": "86"
+       },
+       "answer": ["A"],
+       "multi": False
+   },
+    {
+        "question": "你正在編寫一個函式來判別負數與非負數。這個函式必須符合以下要求：\n"
+                    "• 如果 `a` 是負數，則回傳 \"The result is a negative number\"\n"
+                    "• 如果 `a` 不是負數，則為非負數，再繼續判別：\n"
+                    "　‧ 如果 `a > 0`，則回傳 \"The result is a positive number\"\n"
+                    "　‧ 否則回傳 \"The result is a zero\"\n\n"
+                    "請完成下列函式內容：\n\n"
+                    "```python\n"
+                    "def reResult(a):\n"
+                    "    ___(1)___\n"
+                    "        answer = \"The result is a negative number\"\n"
+                    "    ___(2)___\n"
+                    "        ___(3)___\n"
+                    "            answer = \"The result is a positive number\"\n"
+                    "        ___(4)___\n"
+                    "            answer = \"The result is a zero\"\n"
+                    "    return answer\n"
+                    "```\n",
+        "options": {
+            "A1": "if a < 0:",
+            "B1": "if a > 0:",
+            "C1": "else:",
+            "D1": "elif:",
+
+            "A2": "if a < 0:",
+            "B2": "if a > 0:",
+            "C2": "else:",
+            "D2": "elif:",
+
+            "A3": "if a < 0:",
+            "B3": "if a > 0:",
+            "C3": "else:",
+            "D3": "elif:",
+
+            "A4": "if a < 0:",
+            "B4": "if a > 0:",
+            "C4": "else:",
+            "D4": "elif:"
+        },
+        "answer": ["A1", "C2", "B3", "C4"],
+        "multi": True
+    },
+    {
+       "question": "你設計了一個電影票收費的函式，票價的規則如下：\n"
+                   "• 5歲以下 → 免費入場\n"
+                   "• 5歲及以上的學生 → 60元\n"
+                   "• 5歲到17歲但不是學生 → 120元\n"
+                   "• 17歲以上但不是學生 → 180元\n\n"
+                   "你要如何完成這段程式碼？請在回答區選擇適當的程式碼片段。\n\n"
+                   "```python\n"
+                   "def ticket_fee(age, school):\n"
+                   "    fee = 0                # 5歲以下\n"
+                   "    ___(1)___              # 若 5歲以上且是學生 → 60元\n"
+                   "        fee = 60\n"
+                   "    ___(2)___              # 若 5歲以上但不是學生：\n"
+                   "        ___(3)___          # 若年齡小於等於17歲 → 120元\n"
+                   "            fee = 120\n"
+                   "        else:\n"
+                   "            fee = 180\n"
+                   "    return fee\n"
+                   "```",
+       "options": {
+           "A1": "if age >= 5 and school == True:",
+           "B1": "if age >= 5 and school == False:",
+           "C1": "if age <= 17",
+
+           "A2": "if age >= 5 and school == True:",
+           "B2": "if age >= 5 and school == False:",
+           "C2": "if age <= 17",
+
+           "A3": "if age >= 5 and school == True:",
+           "B3": "if age >= 5 and school == False:",
+           "C3": "if age <= 17"
+       },
+       "answer": ["A1", "B2", "C3"],
+       "multi": True
+   },
+ {
+        "question": "你在設計一個 Python 程式遊戲，讓參加者從 1 到 100 之間猜一個數字，最多有三次機會。\n"
+                    "以下是程式碼（部分內容不完整）：\n\n"
+                    "01 from random import randint\n"
+                    "02 target = randint(1, 100)\n"
+                    "03 chance = 1\n"
+                    "04 print(\"Guess an integer from 1 to 100. You will have 3 chances.\")\n"
+                    "05 ___(A)___\n"
+                    "06     guess = int(input(\"Guess an integer:\"))\n"
+                    "07     if guess > target:\n"
+                    "08         print(\"Guess is too high\")\n"
+                    "09     elif guess < target:\n"
+                    "10         print(\"Guess is too low\")\n"
+                    "11     else:\n"
+                    "12         print(\"Guess is just right\")\n"
+                    "13         ___(B)___\n"
+                    "14     ___(C)___\n\n"
+                    "你應該如何完成第 05、13、14 行的程式碼？",
+        "options": {
+            "A": "while chance <= 3:",
+            "B": "break",
+            "C": "chance += 1",
+            "D": "pass",
+            "E": "while chance < 3",
+            "F": "chance = 2"
+        },
+        "answer": ["A", "B", "C"],
+        "multi": True
+    },
+{
+        "question": "在以下的程式碼中，要加入哪些程式碼片段讓 `print()` 語法可以正確執行？\n"
+                    "你要如何完成程式碼讓 `print()` 是有條件的正確輸出？請選出正確的條件控制語法片段。\n\n"
+                    "```python\n"
+                    "aList = [1, 2, 3]\n"
+                    "bList = [\"a\", \"b\", \"c\"]\n"
+                    "___(1)___\n"
+                    "print(\"aList is equal to bList\")\n"
+                    "___(2)___\n"
+                    "print(\"aList is not equal to bList\")\n"
+                    "```",
+        "options": {
+            "A1": "if aList == bList:",
+            "B1": "if alist -= blist",
+            "C1": "else:",
+            "D1": "else",
+
+            "A2": "if aList == bList:",
+            "B2": "if alist == blist",
+            "C2": "else:",
+            "D2": "else"
+        },
+        "answer": ["A1", "C2"],
+        "multi": True
+    },
+ {
+        "question": "你設計了一個 Python 程式，用來檢查使用者輸入的英文姓名大小寫類型。\n"
+                    "請從下列程式碼片段中選出 4 段，並按正確順序完成程式邏輯（檢查全大寫、全小寫或混合）。\n\n"
+                    "程式碼片段：\n"
+                    "A. name = input(\"Enter your English name:\")\n"
+                    "B. elif name.lower() == name:\n    print(name, \"is all lower case.\")\n"
+                    "C. else:\n    print(name, \"is upper case.\")\n"
+                    "D. else:\n    print(name, \"is mixed case.\")\n"
+                    "E. if name.upper() == name:\n    print(name, \"is all upper case.\")\n"
+                    "F. else:\n    print(name, \"is lower case.\")\n\n"
+                    "請選出正確的程式碼順序。",
+        "options": {
+            "A": "A. name = input(\"Enter your English name:\")",
+            "B": "B. elif name.lower() == name:\n    print(name, \"is all lower case.\")",
+            "C": "C. else:\n    print(name, \"is upper case.\")",
+            "D": "D. else:\n    print(name, \"is mixed case.\")",
+            "E": "E. if name.upper() == name:\n    print(name, \"is all upper case.\")",
+            "F": "F. else:\n    print(name, \"is lower case.\")"
+        },
+        "answer": ["A", "E", "B", "D"],
+        "multi": True
+    },
+   {
+        "question": " 公司決定要幫所有年薪不到 50 萬的員工調升基本工資 5%，並給予獎金 1 萬元。\n"
+                    "新工資 = 目前工資 × 1.05 + 10000。\n"
+                    "程式會將每個人調整後的年薪資料存入 `salaryList` 清單中。\n"
+                    "請完成下列程式邏輯片段：\n\n"
+                    "```python\n"
+                    "___(1)___\n"
+                    "    if salaryList[index] >= 500000:\n"
+                    "        ___(2)___\n"
+                    "    salaryList[index] = (salaryList[index] * 1.05) + 10000\n"
+                    "```",
+        "options": {
+            "A1": "for index in range(len(salary_list) + 1):",
+            "B1": "for index in range(len(salary list) - 1):",
+            "C1": "for index in range(len(salaryList)):",
+            "D1": "for index in salary_list:",
+
+            "A2": "exit()",
+            "B2": "continue",
+            "C2": "break",
+            "D2": "end"
+        },
+        {
+        "question": "你設計了一個函式 `times_tables()`，要列出從 2 到 9 的九九乘法表。\n"
+                    "你需要選出正確的 `for` 迴圈條件來完成這段程式碼：\n\n"
+                    "```python\n"
+                    "# Displays times tables 2 - 9\n"
+                    "def times_tables():\n"
+                    "    ___(1)___            # for col in range(2, 10):\n"
+                    "        ___(2)___        # for row in range(2, 10):\n"
+                    "            print(row * col, end=\" \")\n"
+                    "        print()\n"
+                    "# main\n"
+                    "times_tables()\n"
+                    "```",
+        "options": {
+            "A1": "for col in range(9):",
+            "B1": "for col in range(2, 10):",
+            "C1": "for col in range(2, 9, 1):",
+            "D1": "for col in range(10):",
+
+            "A2": "for row in range(9):",
+            "B2": "for row in range(2, 9, 1):",
+            "C2": "for row in range(2, 10):",
+            "D2": "for row in range(10):"
+        },
+        "answer": ["B1", "C2"],
+        "multi": True
+    },
+        {
+        "question": "你設計了一個 Python 程式來顯示 2 到 100 中的所有質數，請將左方程式碼片段依正確順序排列到右方回答區。\n\n"
+                    "程式碼片段：\n"
+                    "A. n = 2\n   is_prime = True\n   while n <= 100:\n"
+                    "B. n = 2\n   while n <= 100:\n   is_prime = True\n"
+                    "C. break\n"
+                    "D. continue\n"
+                    "E. n += 1\n"
+                    "F. for i in range(2, n):\n       if n / i == 0:\n           is_prime = False\n"
+                    "G. for i in range(2, n):\n       if n % i == 0:\n           is_prime = False\n\n"
+                    "請排列回答區的正確順序（例如：B G C E）",
+        "options": {
+            "A": "A. n = 2\n   is_prime = True\n   while n <= 100:",
+            "B": "B. n = 2\n   while n <= 100:\n   is_prime = True",
+            "C": "C. break",
+            "D": "D. continue",
+            "E": "E. n += 1",
+            "F": "F. for i in range(2, n):\n       if n / i == 0:\n           is_prime = False",
+            "G": "G. for i in range(2, n):\n       if n % i == 0:\n           is_prime = False"
+        },
+        "answer": ["B", "G", "C", "E"],
+        "multi": False
+    },
+        {
+        "question": "你用 Python 設計一個比大小函式，功能如下：\n"
+                    "• 有兩個參數，一個是整數清單 nums，一個是整數 num。\n"
+                    "• 檢查清單中是否有比 num 大的整數，找到即印出訊息並停止搜尋。\n"
+                    "• 若找不到比 num 大的數，印出找不到的訊息。\n\n"
+                    "請依正確順序排列下列程式碼片段完成此函式：\n",
+        "options": {
+            "A": "for i in range(len(nums)):",
+            "B": "if nums[i] > num:\n    print(\"A value greater than {0} is found in the list of {1}\".format(num, nums))",
+            "C": "else:\n    print(\"A value greater than {0} cannot be found in the list of {1}\".format(num, nums))",
+            "D": "break",
+            "E": "def search(nums, num):"
+        },
+        "answer": ["E", "A", "B", "D", "C"],
+        "multi": False
+    },
+      {
+        "question": "你正在設計一個 Python 程式驗證產品編號。產品編號格式必須是 dd-dddd，只能包含數字和破折號。\n"
+                    "如果格式正確，印出 True，否則印出 False。\n"
+                    "請選擇正確的程式碼片段完成程式：\n\n"
+                    "___(1)___         # product_no = \"sentinel\"\n"
+                    "parts = \"\"\n"
+                    "___(2)___         # while product_no != \"\":\n"
+                    "___(3)___         # valid = False\n"
+                    "product_no = input(\"Enter product number (dd-dddd): \")\n"
+                    "parts = product_no.split('-')\n"
+                    "if len(parts) == 2:\n"
+                    "    if len(parts[0]) == 2 and len(parts[1]) == 4:\n"
+                    "        if parts[0].isdigit() and parts[1].isdigit():\n"
+                    "            ___(4)___   # valid = True\n"
+                    "print(valid)",
+        "options": {
+            "A1": "product_no = \"\"",
+            "B1": "product_no = \"sentinel\"",
+            "A2": "while product_no != \"\" :",
+            "B2": "while product_no != \"sentinel\" :",
+            "A3": "valid = False",
+            "B3": "valid = True",
+            "A4": "valid = False",
+            "B4": "valid = True"
+        },
+        "answer": ["B1", "A2", "A3", "B4"],
+        "multi": True
+    },
+      {
+        "question": "你設計 Python 程式，要從清單中逐一查看數字，遇到4時跳出迴圈。\n"
+                    "請選擇正確的程式碼片段完成下列程式碼：\n\n"
+                    "nList = [0, 1, 2, 3, 4, 5, 6, 6, 7, 8, 9]\n"
+                    "index = 0\n"
+                    "___(1)___ (index < 10):  # while\n"
+                    "    print(nList[index])\n"
+                    "    if nList[index] == 4:\n"
+                    "        ___(2)___  # break\n"
+                    "    else:\n"
+                    "        ___(3)___  # index += 1\n",
+        "options": {
+            "A1": "while",
+            "B1": "for",
+            "C1": "if",
+            "D1": "break",
+
+            "A2": "while",
+            "B2": "for",
+            "C2": "if",
+            "D2": "break",
+
+            "A3": "continue",
+            "B3": "break",
+            "C3": "index += 1",
+            "D3": "index = 1"
+        },
+        "answer": ["A1", "D2", "C3"],
+        "multi": True
+    },
+      {
+       "question": "您正在撰寫程式碼使用星號建立E字形。請選出適當的數字完成迴圈範圍，輸出為：\n"
+                   "****\n*\n****\n*\n****\n\n"
+                   "程式碼片段如下：\n\n"
+                   "result_str = \"\"\n"
+                   "for row in range(1, ___(1)___):\n"
+                   "    for column in range(1, ___(2)___):\n"
+                   "        if (row == 1 or row == 3 or row == 5):\n"
+                   "            result_str = result_str + \"*\"\n"
+                   "        elif column == 1:\n"
+                   "            result_str = result_str + \"*\"\n"
+                   "    result_str = result_str + \"\\n\"\n"
+                   "print(result_str)",
+       "options": {
+           "A1": "3",
+           "B1": "4",
+           "C1": "5",
+           "D1": "6",
+
+           "A2": "3",
+           "B2": "4",
+           "C2": "5",
+           "D2": "6"
+       },
+       "answer": ["D1", "C2"],
+       "multi": True
+   },
+
+    {
+        "question": "根據成績 grade (0~100)，傳回對應的字母成績：\n"
+                    "90~100=A，80~89=B，70~79=C，其餘不及格。\n"
+                    "請選擇正確的程式碼片段完成下列程式碼：\n\n"
+                    "___(1)___ grade <= 100 and grade >= 0:\n"
+                    "___(2)___ grade >= 90:\n"
+                    "    print(\"Your grade is A.\")\n"
+                    "___(3)___ grade >= 80:\n"
+                    "    print(\"Your grade is B.\")\n"
+                    "___(4)___ grade < 80 and grade > 69:\n"
+                    "    print(\"Your grade is C.\")\n"
+                    "___(5)___\n"
+                    "    print(\"Your grade is failing.\")\n"
+                    "___(6)___\n"
+                    "    print(\"Invalid grade entered.\")",
+        "options": {
+            "A1": "if",
+            "B1": "elif",
+            "C1": "else if",
+            "D1": "else",
+
+            "A2": "if",
+            "B2": "else",
+            "C2": "elif",
+            "D2": "else if",
+
+            "A3": "if",
+            "B3": "else",
+            "C3": "elif",
+            "D3": "else if",
+
+            "A4": "if",
+            "B4": "else",
+            "C4": "elif",
+            "D4": "else if",
+
+            "A5": "if",
+            "B5": "else",
+            "C5": "elif",
+            "D5": "else if",
+
+            "A6": "if",
+            "B6": "else",
+            "C6": "elif",
+            "D6": "else if"
+        },
+        "answer": ["A1", "C2", "C3", "C4", "B5", "B6"],
+        "multi": True
+    },
+    {
+       "question": "出版社想要檢查出版物中特定字母的數量，請完成以下函式，計算特定字母在字串清單中出現的次數。\n\n"
+                   "# Function accepts list of words from a file\n"
+                   "# word_list = [\"apple\", \"banana\", \"peach\", \"grape\"]\n"
+                   "# and letter to search for.\n"
+                   "# Returns count of a particular letter in that list.\n"
+                   "def count_letter(letter_list, word_list):\n"
+                   "    count = 0\n"
+                   "    for ___(1)___:       # word in letter_list:\n"
+                   "        if ___(2)___:    # letter in word:\n"
+                   "            count += 1\n"
+                   "    return count\n\n"
+                   "word_list = []\n"
+                   "# word_list is populated from a file. Code not shown.\n"
+                   "letter = input(\"which letter would you like to count\")\n"
+                   "letter_count = count_letter(letter, word_list)\n"
+                   "print(\"There are: \", letter_count, \"instances of \" + letter)\n",
+       "options": {
+           "A1": "letter_list in word",
+           "B1": "word in letter_list",
+           "C1": "word == letter_list",
+           "D1": "word is letter_list",
+
+           "A2": "word is letter",
+           "B2": "letter is word",
+           "C2": "word in letter",
+           "D2": "letter in word"
+       },
+       "answer": ["B1", "D2"],
+       "multi": True
+   },
+   {
+        "question": "學校要求你除錯以下程式碼，計算分數清單的總分與平均分。\n"
+                    "已宣告：\n"
+                    "scores = [80, 90, 75, 85]\n"
+                    "count = 0\n"
+                    "sum = 0\n\n"
+                    "程式碼片段：\n"
+                    "for index in range(__ (1) __):\n"
+                    "    count += 1\n"
+                    "    sum += scores[index]\n"
+                    "average = ___(2)___\n"
+                    "print(\"The total scores is:\", sum)\n"
+                    "print(\"The average scores is:\", average)\n\n"
+                    "請選擇正確的程式碼片段修正錯誤：",
+        "options": {
+            "A1": "size(scores):",
+            "B1": "size(scores)-1:",
+            "C1": "len(scores)+1:",
+            "D1": "len(scores):",
+
+            "A2": "sum/count",
+            "B2": "sum**count",
+            "C2": "sum*count",
+            "D2": "sum//count"
+        },
+        "answer": ["D1", "A2"],
+        "multi": True
+    }, 
+   {
+       "question": "您正在撰寫一段程式碼，需求如下：\n"
+                   "1. 允許使用者不斷輸入字詞。\n"
+                   "2. 輸出每個字詞的字元數。\n"
+                   "請選取正確的程式碼片段完成程式：\n\n"
+                   "x = \"Hello World\"\n"
+                   "___(1)___ x != \"QUIT\":\n"
+                   "    num = 0\n"
+                   "    ___(2)___ char ___(3)___ x:\n"
+                   "        num += 1\n"
+                   "    print(num)\n"
+                   "    x = input(\"Enter a new word or QUIT to exit: \")",
+       "options": {
+           "A1": "while",
+           "B1": "for",
+           "C1": "if",
+           "D1": "in",
+
+           "A2": "while",
+           "B2": "for",
+           "C2": "if",
+           "D2": "in",
+
+           "A3": "while",
+           "B3": "for",
+           "C3": "if",
+           "D3": "in"
+       },
+       "answer": ["A1", "B2", "D3"],
+       "multi": True
+   },
+   {
+        "question": "你在測試以下程式碼時發現錯誤。其中行號為參考：\n"
+                    "01 numList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n"
+                    "02 i = 0\n"
+                    "03 while (i < 10)\n"
+                    "04   print(numList[i])\n"
+                    "05\n"
+                    "06   if numList[i] = 6\n"
+                    "07       break\n"
+                    "08    else:\n"
+                    "09       i +=1\n\n"
+                    "你需要更正 03 行和 06 行的程式碼。請選擇正確的程式碼片段：",
+        "options": {
+            "(1)03": {
+                "A": "while (i < 10) :",
+                "B": "while [i < 10]",
+                "C": "while (i < 5) :",
+                "D": "while [i < 5]"
+            },
+            "(2)06": {
+                "A": "if numList[i] == 6",
+                "B": "if numList[i] == 6:",
+                "C": "if numList(i) = 6 :",
+                "D": "if numList(i) !  6"
+            }
+        },
+        "answer": {
+            "(1)03": "A",
+            "(2)06": "B"
+        },
+        "multi": False
+    },
+   {
+        "question": "公司正將過去的進銷存程式碼轉移到 Python，以下哪個是正確的註解語法？",
+        "options": {
+            "A": "// Return the current revenue\ndef get_saletotal():\n    return saletotal",
+            "B": "/* Return the current revenue */\ndef get_saletotal():\n    return saletotal",
+            "C": "'Return the current revenue\ndef get_saletotal():\n    return saletotal",
+            "D": "# Return the current revenue  #正確註解\ndef get_saletotal():\n    return saletotal"
+        },
+        "answer": ["D"],
+        "multi": False
+    },
+   {
+        "question": "你設計一個函式計算矩形面積，下列敘述判斷正確與否：\n"
+                    "A. 第1到4行為註解，執行時會被忽略。\n"
+                    "B. 第2和3行中的 # 符號非必填。\n"
+                    "C. 第6行中的字串會被解釋為註解。\n"
+                    "D. 第7行包含內嵌註解。\n\n"
+                    "請針對每個敘述回答 Yes 或 No。",
+        "options": {
+            "A": ["Yes", "No"],
+            "B": ["Yes", "No"],
+            "C": ["Yes", "No"],
+            "D": ["Yes", "No"]
+        },
+        "answer": {
+            "A": "Yes",
+            "B": "No",
+            "C": "No",
+            "D": "Yes"
+        },
+        "multi": False
+    },
+   {
+       "question": "一家運動器材公司設計程式記錄跑步距離，以下為程式片段：\n"
+                   "01 def get_name():\n"
+                   "02    name = input(\"What is your name?\")\n"
+                   "03    return name\n"
+                   "04 def calc_calories(kms, calories_per_km):\n"
+                   "05    calories = kms * calories_per_km\n"
+                   "07    return calories\n"
+                   "08 distance = int(input(\"How many kilometers did you run this week?\"))\n"
+                   "09 burn_rate = 80  # 每公里燃燒卡路里數\n"
+                   "10 runner = get_name()\n"
+                   "11 calories_burned = calc_calories(distance, burn_rate)\n"
+                   "12 print(runner, \", you burned about \", calories_burned, \"calories.\")\n\n"
+                   "請問你會如何定義第01行與第04行的函式名稱與參數？",
+       "options": {
+           "A": "01 def get_name():",
+           "B": "01 def get_name(runner):",
+           "C": "01 def get name (name):",
+           "D": "04 def calc_calories():",
+           "E": "04 def calc calories(kms, burn_rate):",
+           "F": "04 def calc_calories(kms, calories_per_km):"
+       },
+       "answer": ["A", "F"],
+       "multi": True
+   },
+   {
+        "question": "設計函式 calc_score，要求：\n"
+                    "- 接收兩個參數：目前分數 current 和一個值 value\n"
+                    "- 將 value 加到 current\n"
+                    "- 返回新分數\n\n"
+                    "請選擇正確的程式碼片段完成函式：\n\n"
+                    "____(1)____   ____(2)____\n"
+                    "    current += value\n"
+                    "_____(3)_____",
+        "options": {
+            "(1)": {
+                "A": "calc_score",
+                "B": "def calc_score",
+                "C": "return calc_score"
+            },
+            "(2)": {
+                "A": "(current, value):",
+                "B": "():",
+                "C": "(current, value)",
+                "D": "()"
+            },
+            "(3)": {
+                "A": "pass current",
+                "B": "return current",
+                "C": "return",
+                "D": "pass"
+            }
+        },
+        "answer": {
+            "(1)": "B",
+            "(2)": "A",
+            "(3)": "B"
+        },
+        "multi": False
+    },
+   {
+       "question": "你設計一個函式用來增加遊戲中玩家得分。函式需求：\n"
+                   "- points 如果未指定，預設為 1\n"
+                   "- plus 是 True 時，points 需加倍\n\n"
+                   "程式碼片段與敘述：\n"
+                   "01 def add_score(score, plus, points): # 需修改\n"
+                   "02    if plus == True:\n"
+                   "03       points = points * 2\n"
+                   "04    score = score + points\n"
+                   "05    return score\n"
+                   "06 points = 5\n"
+                   "07 score = 10\n"
+                   "08 new_score = add_score(score, True, points)\n\n"
+                   "請判斷下列敘述正確與否：",
+       "options": {
+           "A": ["Yes", "No"],
+           "B": ["Yes", "No"],
+           "C": ["Yes", "No"],
+           "D": ["Yes", "No"]
+       },
+       "answer": {
+           "A": "Yes",
+           "B": "Yes",
+           "C": "No",
+           "D": "No"
+       }
+   },
+   {
+        "question": "以下是計算薪水的函式 getpay，請判斷敘述是否正確：\n\n"
+                    "def getpay(hours=40, rate=25, qty=0, qtyrate=0, salary=0):\n"
+                    "    overtime = 0\n"
+                    "    if qty > 0:\n"
+                    "        return qty * qtyrate\n"
+                    "    if salary > 0:\n"
+                    "        pass\n"
+                    "    if hours > 40:\n"
+                    "        overtime = (hours - 40) * (1.5 * rate)\n"
+                    "        return overtime + (40 * rate)\n"
+                    "    else:\n"
+                    "        return hours * rate\n\n"
+                    "判斷以下敘述的正確性：",
+        "options": {
+            "A": ["Yes", "No"],  # 呼叫 getpay() 是否會發生錯誤
+            "B": ["Yes", "No"],  # getpay(salary=5000) 不會回傳任何值
+            "C": ["Yes", "No"]   # getpay(qty=500, qtyrate=4) 回傳值為 2000
+        },
+        "answer": {
+            "A": "No",
+            "B": "No",
+            "C": "Yes"
+        }
+    },
+   {
+        "question": "請從下列選項選出正確答案，有關 Python 程式碼文件字串（docstring）\n\n"
+                    "(1) 哪些字元代表文件字串的開頭和結尾？\n"
+                    "A. 單引號 (')\n"
+                    "B. 雙引號 (\")\n"
+                    "C. 兩個雙引號 (\"\")\n"
+                    "D. 三個雙引號 (\"\"\")\n\n"
+                    "(2) 文件字串的標準位置在哪裡？\n"
+                    "A. 在函式宣告區塊前\n"
+                    "B. 緊接在函式標頭後面\n"
+                    "C. 在函式宣告區塊後\n"
+                    "D. 在程式的最後\n\n"
+                    "(3) 如何列印函式的文件字串？\n"
+                    "A. print(__doc__)\n"
+                    "B. print(cube(doc))\n"
+                    "C. print(cube.__doc__)\n"
+                    "D. print(cube(docstring))",
+        "options": {
+            "1": ["A", "B", "C", "D"],
+            "2": ["A", "B", "C", "D"],
+            "3": ["A", "B", "C", "D"]
+        },
+        "answer": {
+            "1": "D",
+            "2": "B",
+            "3": "C"
+        },
+        "multi": False
+    },
+   {
+        "question": "請檢閱以下程式碼並判斷敘述正確與否：\n\n"
+                    "01 def petstore(category, species, breed = \"none\"):\n"
+                    "02     \"\"\"Display information about a pet.\"\"\"\n"
+                    "03     print (f\"\\nYou have selected an animal from the {category} category.\")\n"
+                    "04     if breed == \"none\":\n"
+                    "05         print(f\"The {category} you selected is a {species}\")\n"
+                    "06     else:\n"
+                    "07         print(f\"The {category} you selected is a {species} {breed}\")\n"
+                    "08         print(f\"\\nThe {category} would make a great pet!\")\n"
+                    "...\n"
+                    "14     petstore(category, species, breed)\n"
+                    "17     petstore(breed = \"Maltese\", species = \"Canine\", category = \"dog\")\n"
+                    "18     petstore(\"bird\", species=\"Scarlet Macaw\")\n\n"
+                    "判斷下列敘述：\n"
+                    "A. 此函式會傳回一個值。 \n"
+                    "B. 第14和17行的函式呼叫無效。\n"
+                    "C. 第16和18行的函式呼叫會產生錯誤。",
+        "options": {
+            "A": ["Yes", "No"],
+            "B": ["Yes", "No"],
+            "C": ["Yes", "No"]
+        },
+        "answer": {
+            "A": "No",
+            "B": "No",
+            "C": "No"
+        }
+    },
+   {
+       "question": "學校活動夜的函式 roomAssignment 用來指派學生前往不同教室。\n"
+                   "函式定義：\n"
+                   "def roomAssignment(student, year):\n"
+                   "    \"\"\"Assign rooms to students\"\"\"\n"
+                   "    if year == 1:\n"
+                   "        print(f\"\\n{student.title()}, please report to room 115\")\n"
+                   "    elif year == 2:\n"
+                   "        print(f\"\\n{student.title()}, please report to room 210\")\n"
+                   "    elif year == 3:\n"
+                   "        print(f\"\\n{student.title()}, please report to room 320\")\n"
+                   "    elif year == 4:\n"
+                   "        print(f\"\\n{student.title()}, please report to room 405\")\n"
+                   "    elif year == 5:\n"
+                   "        print(f\"\\n{student.title()}, please report to room 515\")\n"
+                   "    else:\n"
+                   "        print(f\"\\n{student.title()}, please report to room 625\")\n\n"
+                   "以下哪些呼叫方式是正確的？請選擇兩個答案。",
+       "options": {
+           "A": "name = input(\"What is your name?\")\ngrade = 0\nwhile grade not in (1,2,3,4,5,6):\n    grade = int(input(\"What grade are you in (1-6)?\"))\nroomAssignment(name, year=grade)",
+           "B": "name = input(\"What is your name?\")\ngrade = 0\nwhile grade not in (1,2,3,4,5,6):\n    grade = int(input(\"What grade are you in (1-6)?\"))\nroomAssignment(student, year)",
+           "C": "roomAssignment(\"Sherlock Sassafrass\", 4)",
+           "D": "roomAssignment(year=6, name=\"Minnie George\")"
+       },
+       "answer": ["A", "C"],
+       "multi": True
+   },
+   {
+        "question": "您為公司開發Python應用程式，想加入附註方便團隊成員了解。請問應採取哪種做法？",
+        "options": {
+            "A": "在任何程式碼片段的<!--和-->之間放置附註。",
+            "B": "在任何一行的#後面放置附註。",
+            "C": "在任何一行的//後面放置附註。",
+            "D": "在任何程式碼片段的/**/之間置附註"
+        },
+        "answer": "B",
+        "multi": False
+    },
+   {
+        "question": "在程式中要使用 datetime 模組中 datetime 函式，並設定為替代名稱 dt，應該使用哪個導入語句？",
+        "options": {
+            "A": "from datetime as dt",
+            "B": "from datetime import datetime as dt",
+            "C": "import datetime from datetime as dt",
+            "D": "import datetime.datetime as dt"
+        },
+        "answer": "B",
+        "multi": False
+    },
+   {
+        "question": "你設計一個讀取檔案後將檔案中的每一行列印出來的函式。程式碼如下：\n"
+                    "01 def print_file(filename):\n"
+                    "02    line = None\n"
+                    "03    if os.path.isfile(filename):\n"
+                    "04       data = open(filename, 'r')\n"
+                    "05       for line in data:\n"
+                    "06           print(line)\n\n"
+                    "執行時，收到第03行的錯誤，原因是什麼？",
+        "options": {
+            "A": "你需導入os 模組。",
+            "B": "path方法並不存在os模組中。",
+            "C": "path物件中不存在isfile方法。",
+            "D": "isfile 方法不接受一個參數。"
+        },
+        "answer": "A",
+        "multi": False
+    },
+   {
+       "question": "設計程式碼用來生成隨機整數，最小值為11，最大值為20。請選出可以達成此功能的兩種函式。",
+       "options": {
+           "A": "random.randrange(11, 21, 1)",
+           "B": "random.randrange(11, 20, 1)",
+           "C": "random.randint(11, 20)",
+           "D": "random.randint(11, 21)"
+       },
+       "answer": ["A", "C"],
+       "multi": True
+   },
+   {
+       "question": "設計程式碼用來生成隨機整數，範圍是0到10（含0與10）。你應該使用哪個語法？",
+       "options": {
+           "A": "random.random()",
+           "B": "random.randrange(0.0, 1.0)",
+           "C": "random.randrange()",
+           "D": "random.randint(0, 10)"
+       },
+       "answer": "D",
+       "multi": False
+   },
+   {
+        "question": "你設計程式碼來產生符合以下要求的隨機數字：\n"
+                    "- 是2的倍數\n"
+                    "- 最低數字為2\n"
+                    "- 最高數字為50\n"
+                    "請選出符合要求的兩個程式碼片段。",
+        "options": {
+            "A": "from random import randint\nprint(randint(1, 25) * 2)",
+            "B": "from random import randint\nprint(randint(1, 50))",
+            "C": "from random import randrange\nprint(randrange(2, 50, 2))  # 50改成51才包含50",
+            "D": "from random import randrange\nprint(randrange(2, 50, 1))"
+        },
+        "answer": ["A", "C"],
+        "multi": True
+    },
+   {
+        "question": "你正在設計一個處理數字的函式。要求：\n"
+                    "- 將浮點數傳遞到函式中\n"
+                    "- 取浮點數的絕對值\n"
+                    "- 無條件進位到整數\n"
+                    "請問你應該使用哪兩個數學函式？",
+        "options": {
+            "A": "math.fabs(x)",
+            "B": "math.floor(x)",
+            "C": "math.fmod(x)",
+            "D": "math.ceil(x)",
+            "E": "math.frexp(x)"
+        },
+        "answer": ["A", "D"],
+        "multi": True
+    },
+   {
+        "question": "您正在撰寫一個程式來顯示 My Healthy Eats Delivery 的特價優惠。\n\n"
+                    "請選出正確的語法以完成程式碼第 04、05、15 行：\n"
+                    "程式部分如下：\n"
+                    "01 import datetime\n"
+                    "02 dailySpecials = (\"Spaghetti\", \"Macaroni & Cheese\", \"Meatloaf\", \"Fried Chicken\")\n"
+                    "03 weekendSpecials = (\"Lobster\", \"Prime Rib\", \"Parmesan-Crusted Cod\")\n"
+                    "04 ___(1)___  # 擷取目前的日期時間\n"
+                    "05 ___(2)___  # 擷取今天是星期幾\n"
+                    "...\n"
+                    "15 ___(3)___  # 計算本週剩餘天數",
+        "options": {
+            "A": "04行 ➜ now = datetime.datetime.now()",
+            "B": "04行 ➜ now = datetime.datetime.today()",
+            "C": "04行 ➜ now = datetime.datetime.day()",
+            "D": "04行 ➜ now = datetime.datetime()",
+            "E": "05行 ➜ today = now.strftime(\"%A\")",
+            "F": "05行 ➜ today = now.strftime(\"%B\")",
+            "G": "05行 ➜ today = now.strftime(\"*\")",
+            "H": "05行 ➜ today = now.strftime(\"SY\")",
+            "I": "15行 ➜ daysLeft = now.weekday()",
+            "J": "15行 ➜ daysLeft = 6 - now.weekday()",
+            "K": "15行 ➜ daysLeft = 6 + now.weekday()",
+            "L": "15行 ➜ daysLeft = 6 + now.week()"
+        },
+        "answer": ["A", "E", "J"],  # 對應 04, 05, 15 行
+        "multi": True
+    },
+   {
+       "question": "你設計一個指派房間與組別的 Python 程式：\n\n"
+                   "import random\n\n"
+                   "roomsAssigned = [1]\n"
+                   "room_number = 1\n"
+                   "groupList = [\"Ropes\", \"Rafting\", \"Obstacle\", \"Wellness\"]\n"
+                   "...\n"
+                   "while room_number in roomsAssigned:\n"
+                   "    ___(1)___\n"
+                   "...\n"
+                   "group = ___(2)___\n\n"
+                   "你應該如何完成這段程式碼？",
+       "options": {
+           "A": "(1) room_number = random.randint(1, 50)",
+           "B": "(1) room_number = random.random(1, 50)",
+           "C": "(2) random.choice(groupList)",
+           "D": "(2) random.shuffle(groupList)"
+       },
+       "answer": ["A", "C"],
+       "multi": True
+   },
+   {
+        "question": "在下列的語法敘述中，如果是正確的就選擇 Yes，否則請選擇 No：\n\n"
+                    "A. 在 try 語法中可以有不只一個 except 子句。\n"
+                    "B. 在 try 語法中可以不加 except 子句。\n"
+                    "C. 在 try 語法中可以有一個 finally 子句與 except 子句。\n"
+                    "D. 在 try 語法中可以有不只一個 finally 子句。",
+        "options": {
+            "A": "A. 是 Yes",
+            "B": "B. 是 Yes",
+            "C": "C. 是 Yes",
+            "D": "D. 是 No"
+        },
+        "answer": ["A", "B", "C", "D"],
+        "multi": True
+    },
+   {
+        "question": "你製作一個程式詢問使用者家中有多少個小孩，使用者必須輸入整數。\n"
+                    "如果輸入值不是整數，程式碼必須指出並要求重新輸入。\n"
+                    "你要如何完成程式碼？請選擇適當的程式碼片段完成下列程式碼：\n\n"
+                    "while True:\n"
+                    "    ___(1)___\n"
+                    "        x = int(input(\"How many children do you have? \"))\n"
+                    "        break\n"
+                    "    ___(2)___ ValueError:\n"
+                    "        print(\"Please make sure you entered an integer, please try again...\")",
+        "options": {
+            "A": "(1) try:",
+            "B": "(1) else:",
+            "C": "(2) except",
+            "D": "(2) raise",
+            "E": "(1) finally:"
+        },
+        "answer": ["A", "C"],
+        "multi": True
+    },
+   {
+        "question": "關於 `assert` 方法的敘述，請選擇正確的配對方式：\n\n"
+                    "(1) 若要測試變數 x 與 y 的值是否相同，可以使用：？\n"
+                    "(2) 若要測試物件 x 與 y 是否為同一個實體，可以使用：？\n"
+                    "(3) 若要測試清單中是否存在某個值，可以使用：？",
+        "options": {
+            "A": "(1) ➝ assertEqual(x, y)",
+            "B": "(2) ➝ assertIs(x, y)",
+            "C": "(3) ➝ assertIn(x, y)",
+            "D": "(1) ➝ assertIsInstance(x, y)",
+            "E": "(2) ➝ assertEqual(x, y)"
+        },
+        "answer": ["A", "B", "C"],
+        "multi": True
+    },
+   {
+        "question": "你需要測試某個物件是否為特定類別的執行個體，請問如何進行單元測試？\n"
+                    "請依照下列註解提示選出正確的程式碼片段配對：\n\n"
+                    "___(1)___ unittest      # 導入 unittest 模組\n"
+                    "class TestIsInstance(___(2)___):  # 所有單元測試的類別應繼承 unittest.TestCase\n"
+                    "    def ___(3)___:   # 測試方法名稱應以 test_ 開頭\n"
+                    "        ___(4)___    # 測試是否為指定類別的實例\n"
+                    "if __name__ == \"__main__\":\n"
+                    "    unittest.main()",
+        "options": {
+            "A": "(1) ➝ from",
+            "B": "(1) ➝ include",
+            "C": "(1) ➝ import",
+            "D": "(1) ➝ use",
+            "E": "(2) ➝ TestCase",
+            "F": "(2) ➝ unittest.TestCase",
+            "G": "(2) ➝ unittest",
+            "H": "(2) ➝ TestCase.unittest",
+            "I": "(3) ➝ test isInstance()",
+            "J": "(3) ➝ isInstance()",
+            "K": "(3) ➝ test_isInstance(self)",
+            "L": "(3) ➝ isInstance(self)",
+            "M": "(4) ➝ assertIsInstance(obj, cls, msg=None)",
+            "N": "(4) ➝ self.assertIsInstance(obj, cls, msg-None)",
+            "O": "(4) ➝ assertIsInstance(obj, cls)",
+            "P": "(4) ➝ self.assertIsInstance(obj, cls)"
+        },
+        "answer": ["C", "F", "K", "P"],
+        "multi": True
+    },
+   {
+        "question": "您需要撰寫執行下列工作的程式碼：\n"
+                    "1. 呼叫 process() 函式。\n"
+                    "2. 如果 process() 函式回傳錯誤，則呼叫 logError() 函式。\n"
+                    "3. 呼叫 process() 函式之後一律呼叫 displayResult() 函式。\n"
+                    "請選擇正確的程式碼區塊標籤以完成以下程式碼：\n\n"
+                    "___(1)___:\n"
+                    "    process()\n"
+                    "___(2)___:\n"
+                    "    logError()\n"
+                    "___(3)___:\n"
+                    "    displayResult()",
+        "options": {
+            "A": "(1) assert\n(2) raise\n(3) finally",
+            "B": "(1) raise\n(2) except\n(3) try",
+            "C": "(1) except\n(2) try\n(3) finally",
+            "D": "(1) try\n(2) except\n(3) finally",
+            "E": "(1) finally\n(2) except\n(3) try"
+        },
+        "answer": ["D"],
+        "multi": False
+    },
+   {
+        "question": "下列函式會計算使用指數之運算式的值。加上行號僅為參考之用：\n\n"
+                    "01 def calc_power(a, b):\n"
+                    "02    return a**b\n"
+                    "03 base = input(\"Enter the number for the base: \")         #需加eval(…) 或 int( …)\n"
+                    "04 exponent = input(\"Enter the number for the exponent: \")  #需加eval(…) 或 int( …)\n"
+                    "05 result = calc_power(base, exponent)\n"
+                    "06 print(\"The result is \" + result)  #加 str()\n\n"
+                    "針對下列敘述，請判斷是否正確：\n",
+        "options": {
+            "A": "第02行會造成執行階段錯誤。",
+            "B": "第06行會造成執行階段錯誤。",
+            "C": "eval函式應該用於第03和04行"
+        },
+        "answer": ["A", "B", "C"],
+        "multi": True,
+        "option_type": "YesNo"  # 表示選項需用 Yes / No 判斷 (可在UI中調整呈現)
+    },
+   {
+        "question": 
+            "您撰寫了以下這段程式碼：\n\n"
+            "import sys\n"
+            "try:\n"
+            "    file_in = open(\"in.txt\", 'r')       \n"
+            "    file_out = open(\"out.txt\", 'w+')  \n"
+            "except IOError:\n"
+            "    print('cannot open', file_name)\n"
+            "else:\n"
+            "    i = i + 1\n"
+            "    for line in file_in:\n"
+            "        print (line.rstrip())  \n"
+            "        file_out.write(\"line \"+ str(i) + \": \"+ line)  \n"
+            "        i = i + 1\n"
+            "    file_in.close ()\n"
+            "    file_out.close ()\n"
+            "\n"
+            "假設 out.txt 檔案不存在，執行此程式碼，請判斷以下敘述是否正確？\n"
+            "請針對每個敘述選擇 Yes 或 No。\n",
+        "options": {
+            "A": "此程式碼將正常執行，不會發生錯誤。",
+            "B": "此程式碼將執行，但會產生邏輯錯誤。",
+            "C": "此程式碼將產生執行階段錯誤。",
+            "D": "此程式碼將產生語法錯誤。"
+        },
+        "answer": ["A"],  # 根據你的標示，A 是正確，其他均為錯誤
+        "multi": True,
+        "option_type": "YesNo"
+    }   
+       ]
 
 
 random.shuffle(quiz_data)
