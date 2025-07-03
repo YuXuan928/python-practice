@@ -215,7 +215,7 @@ quiz_data = [
     "multi": True
 },
 {
-    "question": "計算以下的 Python 數學運算式： (3*(1+2)**2 - 2**2*3) 結果為何？",
+    "question": "計算以下的 Python 數學運算式： ""(3*(1+2)**2 - 2**2*3)" "結果為何？",
     "options": {
         "A": "3",
         "B": "13",
@@ -300,7 +300,7 @@ quiz_data = [
                 "    total = days_rented * cost_per_day\n"
                 "print(\"Cost of the car rental is : $\", total)",
     "options": {
-        "A": "(1) != \"n\":  (2) == \"Sunday\":  (3) == \"Thursday\"",
+        "A": "(1) == \"n\":  (2) == \"Sunday\":  (3) == \"Thursday\"",
         "B": "(1) == \"n\":  (2) >= \"Sunday\":  (3) <= \"Thursday\"",
         "C": "(1) == \"y\":  (2) is \"Sunday\":  (3) is \"Thursday\""
     },
@@ -380,24 +380,6 @@ quiz_data = [
     "multi": False
 },
  {
-    "question": "您正在撰寫一個 Python 程式評估算術公式。\n"
-                "此公式描述 a 是先取得一個輸入值，而 b 等於 a 乘以 -1 之後再平方，\n"
-                "所以 b 是結果。\n\n"
-                "您所建立的程式碼片段如下（加上行號僅為參考之用）：\n"
-                "01 a = eval(input(\"Enter a number for the equation: \"))\n"
-                "02 b = □ □ □ □ □    （請選擇填空順序）\n\n"
-                "程式碼片段：\n"
-                "A. -      B. (      C. )      D. **      E. **2      F. 2      G. a",
-    "options": {
-        "A": "[A B C D E]",
-        "B": "[B A G C E]",
-        "C": "[B A C G E]",
-        "D": "[A G C E F]"
-    },
-    "answer": ["B"],
-    "multi": False
-},
-{
     "question": "您正在撰寫一個 Python 程式評估算術公式。\n"
                 "此公式描述 a 是先取得一個輸入值，而 b 等於 a 乘以 -1 之後再平方，\n"
                 "所以 b 是結果。\n\n"
