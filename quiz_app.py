@@ -1995,7 +1995,6 @@ quiz_data = [
         "multi": True,
         "option_type": "YesNo"
     }   
-
 ]
 
 def main():
