@@ -2057,8 +2057,8 @@ def main():
     if st.button("下一題"):
         st.session_state.q_index += 1
         st.session_state.answered = False
-        st.experimental_rerun()
-        return  # 🔁 安全退出函式，避免 rerun 報錯
+#        st.experimental_rerun()
+#        return  # 🔁 安全退出函式，避免 rerun 報錯
 
 
 if __name__ == "__main__":
