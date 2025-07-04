@@ -2001,103 +2001,68 @@ quiz_data = [
 ]
 
 def main():
-    st.title("Python 線上測驗系統")
-    st.write("請完成以下題目，支援單選、多選、判斷題（是非題）")
+    st.title("Python 程式測驗系統")
 
-    # 初始化 session_state 變數
-    if 'q_index' not in st.session_state:
-        st.session_state.q_index = 0
+    if "score" not in st.session_state:
         st.session_state.score = 0
-        st.session_state.show_feedback = False # 新增：控制是否顯示答案反饋
-        st.session_state.last_answer_correct = False # 新增：儲存上一題的答案是否正確
-        st.session_state.last_correct_answer_display = "" # 新增：儲存上一題的正確答案顯示內容
+    if "q_index" not in st.session_state:
+        st.session_state.q_index = 0
+    if "answered" not in st.session_state:
+        st.session_state.answered = False
 
-    # 顯示題目
-    if st.session_state.q_index < len(quiz_data) and not st.session_state.show_feedback:
-        q = quiz_data[st.session_state.q_index]
-
-        st.markdown(f"### {q['question']}")
-
-        user_answers = []
-
-        if q.get("multi") == False:
-            # 單選題
-            user_answer = st.radio("請選擇答案：", list(q["options"].keys()),
-                                   format_func=lambda x: f"{x}. {q['options'][x]}",
-                                   key=f"radio_{st.session_state.q_index}") # 增加 key 以避免重複
-            user_answers = [user_answer]
-
-        elif q.get("multi") == True:
-            # 多選題
-            selected_options = []
-            for key, text in q["options"].items():
-                checked = st.checkbox(f"{key}. {text}", key=f"checkbox_{st.session_state.q_index}_{key}") # 增加 key
-                if checked:
-                    selected_options.append(key)
-            user_answers = selected_options
-
-        elif q.get("multi") == "yesno":
-            # 判斷題(是非題) - 每題分別有自己的判斷
-            yesno_answers = {}
-            for key, text in q["options"].items():
-                choice = st.radio(f"{key}. {text}", ["Yes", "No"], key=f"yesno_{st.session_state.q_index}_{key}") # 增加 key
-                yesno_answers[key] = choice
-            user_answers = yesno_answers
-
-        # 為「提交答案」按鈕增加唯一的 key
-        if st.button("提交答案", key=f"submit_btn_{st.session_state.q_index}"):
-            correct = False
-            correct_answer_display = "" # 用於儲存正確答案的顯示內容
-
-            if q.get("multi") == "yesno":
-                # 比較 dict
-                if user_answers == q["answer"]:
-                    correct = True
-                else:
-                    wrong_list = []
-                    for k, v in q["answer"].items():
-                        if user_answers.get(k) != v:
-                            wrong_list.append(f"{k}: 正確答案是 {v}")
-                    correct_answer_display = "正確答案：\n" + "\n".join(wrong_list)
-            else:
-                # 單選、多選用集合比較
-                if set(user_answers) == set(q["answer"]):
-                    correct = True
-                else:
-                    correct_answer_display = f"正確答案是：{', '.join(q['answer'])}"
-
-            # 儲存反饋狀態和內容
-            st.session_state.show_feedback = True
-            st.session_state.last_answer_correct = correct
-            st.session_state.last_correct_answer_display = correct_answer_display
-            st.rerun() # 觸發重新運行以顯示反饋
-
-    # 顯示答案反饋
-    elif st.session_state.show_feedback:
-        if st.session_state.last_answer_correct:
-            st.success("✅ 答對了！")
-        else:
-            st.error("❌ 答錯了！")
-            st.write(st.session_state.last_correct_answer_display)
-
-        # 為「下一題」按鈕增加唯一的 key
-        if st.button("下一題", key=f"next_btn_{st.session_state.q_index}"):
-            st.session_state.q_index += 1
-            st.session_state.show_feedback = False # 重置反饋狀態
-            st.rerun() # 觸發重新運行以顯示下一題或完成訊息
-
-    # 測驗完成
-    else: # q_index >= len(quiz_data) 且 show_feedback 為 False (因為上一題已處理完畢)
-        st.write(f"測驗完成！你的分數是 {st.session_state.score} / {len(quiz_data)}")
-        # 為「重新開始」按鈕增加唯一的 key
-        if st.button("重新開始", key="restart_btn"):
+    if st.session_state.q_index >= len(quiz_data):
+        st.success(f"你已完成全部測驗！總分：{st.session_state.score} / {len(quiz_data)}")
+        if st.button("重新開始"):
             st.session_state.q_index = 0
             st.session_state.score = 0
-            st.session_state.show_feedback = False # 確保重置
-            st.session_state.last_answer_correct = False # 確保重置
-            st.session_state.last_correct_answer_display = "" # 確保重置
-            st.rerun()
+            st.session_state.answered = False
+        return
+
+    question = quiz_data[st.session_state.q_index]
+
+    st.markdown(f"### 題目 {st.session_state.q_index + 1}:")
+    st.write(question["question"])
+
+    user_answers = []
+
+    if question.get("multi", False):
+        # 多選題: checkbox
+        for key, option_text in question["options"].items():
+            checked = st.checkbox(f"{key}: {option_text}", key=f"{st.session_state.q_index}_{key}")
+            if checked:
+                user_answers.append(key)
+    else:
+        # 單選題: radio
+        choice = st.radio(
+            "請選擇答案:",
+            options=list(question["options"].keys()),
+            format_func=lambda x: f"{x}: {question['options'][x]}",
+            key=f"{st.session_state.q_index}_radio"
+        )
+        user_answers = [choice]
+
+    if st.button("提交答案") and not st.session_state.answered:
+        # 檢查答案
+        correct_answers = set(question["answer"])
+        user_answers_set = set(user_answers)
+
+        if correct_answers == user_answers_set:
+            st.success("答對了！")
+            st.session_state.score += 1
+        else:
+            st.error(f"答錯了！正確答案是：{', '.join(correct_answers)}")
+
+        st.session_state.answered = True
+
+    if st.session_state.answered:
+        if st.button("下一題"):
+            st.session_state.q_index += 1
+            st.session_state.answered = False
+            st.experimental_rerun()
 
 
 if __name__ == "__main__":
     main()
+
+
+
