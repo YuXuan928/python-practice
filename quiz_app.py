@@ -1,8 +1,8 @@
 import streamlit as st
+import textwrap
 
 # 題庫資料
-from quiz_data import quiz_data  # 確保題庫放在 quiz_data.py
-
+from quiz_data import quiz_data  # 確保題庫放在 quiz_data.py，並為 UTF-8 編碼
 # 假設 quiz_data 在此檔案的某處被定義，例如：
 quiz_data = [
     {"question": "Python 是一種什麼類型的語言？", "options": {"A": "編譯型", "B": "解釋型", "C": "組合型"}, "answer": ["B"], "multi": False},
@@ -2003,6 +2003,13 @@ quiz_data = [
     }   
 ]
 
+def format_question_text(text):
+    """
+    將題目內容保留換行格式並支援程式區塊，保持與 Python 編寫時一致
+    """
+    # 三個反引號處理程式碼區塊 (Streamlit markdown 要求)
+    return textwrap.dedent(text).strip()
+
 def main():
     st.set_page_config(page_title="Python 程式測驗系統")
     st.title("🧠 Python 程式測驗系統")
@@ -2028,7 +2035,7 @@ def main():
     # 顯示當前題目
     question = quiz_data[st.session_state.q_index]
     st.markdown(f"### 題目 {st.session_state.q_index + 1}")
-    st.markdown(f"{question['question']}")
+    st.markdown(format_question_text(question['question']))
 
     user_answers = []
 
