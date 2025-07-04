@@ -2001,8 +2001,9 @@ quiz_data = [
 ]
 
 def main():
-    st.title("Python 程式測驗系統")
+    st.title("🐍 Python 程式測驗系統")
 
+    # 初始化 session state
     if "score" not in st.session_state:
         st.session_state.score = 0
     if "q_index" not in st.session_state:
@@ -2010,56 +2011,58 @@ def main():
     if "answered" not in st.session_state:
         st.session_state.answered = False
 
+    # 顯示結束頁面
     if st.session_state.q_index >= len(quiz_data):
-        st.success(f"你已完成全部測驗！總分：{st.session_state.score} / {len(quiz_data)}")
-        if st.button("重新開始"):
-            st.session_state.q_index = 0
+        st.success(f"你已完成全部測驗！🎉 總分：{st.session_state.score} / {len(quiz_data)}")
+        if st.button("🔁 重新開始"):
             st.session_state.score = 0
+            st.session_state.q_index = 0
             st.session_state.answered = False
+            st.rerun()
         return
 
+    # 顯示目前題目
     question = quiz_data[st.session_state.q_index]
-
-    st.markdown(f"### 題目 {st.session_state.q_index + 1}:")
+    st.markdown(f"### 題目 {st.session_state.q_index + 1}")
     st.write(question["question"])
 
     user_answers = []
 
     if question.get("multi", False):
-        # 多選題: checkbox
+        # 多選題
         for key, option_text in question["options"].items():
             checked = st.checkbox(f"{key}: {option_text}", key=f"{st.session_state.q_index}_{key}")
             if checked:
                 user_answers.append(key)
     else:
-        # 單選題: radio
+        # 單選題
         choice = st.radio(
-            "請選擇答案:",
+            "請選擇答案：",
             options=list(question["options"].keys()),
             format_func=lambda x: f"{x}: {question['options'][x]}",
-            key=f"{st.session_state.q_index}_radio"
+            key=f"radio_{st.session_state.q_index}"
         )
         user_answers = [choice]
 
-    if st.button("提交答案") and not st.session_state.answered:
-        # 檢查答案
+    # 提交答案
+    if st.button("✅ 提交答案", key=f"submit_{st.session_state.q_index}") and not st.session_state.answered:
         correct_answers = set(question["answer"])
-        user_answers_set = set(user_answers)
+        user_set = set(user_answers)
 
-        if correct_answers == user_answers_set:
-            st.success("答對了！")
+        if correct_answers == user_set:
+            st.success("🎯 答對了！")
             st.session_state.score += 1
         else:
-            st.error(f"答錯了！正確答案是：{', '.join(correct_answers)}")
+            st.error(f"❌ 答錯了！正確答案是：{', '.join(correct_answers)}")
 
         st.session_state.answered = True
 
-    if st.button("下一題"):
-        st.session_state.q_index += 1
-        st.session_state.answered = False
-#        st.experimental_rerun()
-#        return  # 🔁 安全退出函式，避免 rerun 報錯
-
+    # 下一題
+    if st.session_state.answered:
+        if st.button("➡️ 下一題"):
+            st.session_state.q_index += 1
+            st.session_state.answered = False
+            st.rerun()
 
 if __name__ == "__main__":
     main()
