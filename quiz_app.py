@@ -2054,11 +2054,11 @@ def main():
 
         st.session_state.answered = True
 
-    if st.session_state.answered:
-        if st.button("下一題"):
-            st.session_state.q_index += 1
-            st.session_state.answered = False
-            st.experimental_rerun()
+    if st.button("下一題"):
+    st.session_state.q_index += 1
+    st.session_state.answered = False
+    st.experimental_rerun()
+    return  # 🔁 安全退出函式，避免 rerun 報錯
 
 
 if __name__ == "__main__":
